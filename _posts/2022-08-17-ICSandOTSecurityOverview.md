@@ -49,7 +49,6 @@ Open Platform communications were developed to create a common language for Wind
 Process Field Net is a communication standard used for communicating over industrial ethernet, which is not to be confused with standard ethernet. These protocols tend to transmit on layer two as opposed to layer three. These connections offer lower latency than traditional ethernet.
 <h3 id="header-three">OT Programming</h3>
 
-
 <h4 id="header-four">Ladder diagram</h4>
 <figure style="width: 300px" class="align-right">
   <img src="https://thom61676e6f6e.github.io/MackerelBlog/assets/images/ICSOTimages/ladderdiagram.gif" alt="" />
@@ -57,25 +56,27 @@ Process Field Net is a communication standard used for communicating over indust
 </figure>
 Ladder Logic is one of the first uses of programing PLCs; In contrast, Ladder logic is a programing language for PLCs. It was initially developed to show the relation of relays in a rack as the process worked through the function. It has now been adopted for PLC instruction sets.
 
-
 <h4 id="header-four">Function block diagram</h4>
-FBD is a graphical-based form of PLC programming generally used for chemical processes. Function blocks tend to work in a loop where one input will go back to the output and loop till the exit condition is met. The function block is useful for smaller applications but can be troublesome when scaled
 <figure style="width: 300px" class="align-right">
   <img src="https://thom61676e6f6e.github.io/MackerelBlog/assets/images/ICSOTimages/functionblock.png" alt="" />
   <figcaption>(Romanov, 2020) </figcaption>
 </figure>
+FBD is a graphical-based form of PLC programming generally used for chemical processes. Function blocks tend to work in a loop where one input will go back to the output and loop till the exit condition is met. The function block is useful for smaller applications but can be troublesome when scaled
+
 <h4 id="header-four">Structured text</h4>
-Structured text programming is the closest to modern programming languages. While this makes it easier to develop the same rules apply to ST as any other programing language where error handling must be written into the program or the PLC will run into an error condition. Looking at the output below, you can see the resemblance to C.
 <figure style="width: 300px" class="align-right">
   <img src="https://thom61676e6f6e.github.io/MackerelBlog/assets/images/ICSOTimages/structredtext.jpg" alt="" />
   <figcaption>(Romanov, 2020) </figcaption>
 </figure>
+Structured text programming is the closest to modern programming languages. While this makes it easier to develop the same rules apply to ST as any other programing language where error handling must be written into the program or the PLC will run into an error condition. Looking at the output below, you can see the resemblance to C.
+
 <h4 id="header-four">Instruction list</h4>
-Instruction List is a text-based form of programming that relies on sending an ordered list to a PLC that it can step through. Instruction lists are very similar to the assembly language. Generally a command is loaded with an LD value and this is set to an accumulator to be processed.
 <figure style="width: 300px" class="align-right">
   <img src="https://thom61676e6f6e.github.io/MackerelBlog/assets/images/ICSOTimages/instructionlist.jpg" alt="" />
   <figcaption>(Mitsubishi Electric, 2009)</figcaption>
 </figure>
+Instruction List is a text-based form of programming that relies on sending an ordered list to a PLC that it can step through. Instruction lists are very similar to the assembly language. Generally a command is loaded with an LD value and this is set to an accumulator to be processed.
+
 <h4 id="header-four">Sequential function chart</h4>
 <figure style="width: 300px" class="align-right">
   <img src="https://thom61676e6f6e.github.io/MackerelBlog/assets/images/ICSOTimages/sequential.jpg" alt="" />
@@ -93,10 +94,11 @@ If these complex OT networks are compromised, there can be a lot of adverse effe
 <h3 id="header-three">Notable OT Attacks</h3>
 <h4 id="header-four">Australia – Maroochy shire Water Services</h4>
 In 1999, The Maroochy Shire council had a SCADA system installed for their waste waters services; in 2000, the system began to experience unexplained shutdowns such as
-
-•	Pumps were not running when they should have been 
-•	Alarms were not reporting to the central computer 
-•	A loss of communication between the central computer and various pumping stations. 
+<ul>
+  <li>Pumps were not running when they should have been</li>
+  <li>Alarms were not reporting to the central computer</li>
+  <li>A loss of communication between the central computer and various pumping stations. </li>
+</ul>
 (Abrams & Weiss, 2008)
 The controls were rebooted, and the system was running as intended. These shutdowns and malfunctions continued to happen. The city decided to bring in an investigator from the company that installed the equipment to investigate the incident and rule out the faulty equipment that caused the issues. The Investigator concluded that there was no faulty equipment in the SCADA system. But the outages continued; on 4/23/00, Vitek Boden was arrested near one of the pumping houses with a computer and radio equipment in his car.
 Vitek had been an employee of Hunter Watertech during the installation of the SCADA system; he had quit his job at Hunter Watertech and was seeking employment from the city council. After his application was rejected, Vitek Boden decided to take revenge on the city. Using his knowledge of the SCADA system and a Radio transmitter, he could remotely send commands to the pumps. He shut them down, causing over 265000 gallons of sewage to flood the township and irreparably affecting the wildlife ecosystem in the area.
@@ -127,22 +129,27 @@ While Russia tends to be behind a wide range of ICS attacks, Iran has been rampi
 While North Korea has compromised ICS systems, their primary goal seems to be financially motivated, and these compromises seem to be residual fallout from their attacks. MITRE ATT&CK has identified these two groups APT38 [G0082] and Lazarus Group [G0032]
 <h4 id="header-four">Various groups</h4>
 The last three groups have been traced to ICS attacks, but these are typically due to misconfiguration or gaps in security that allow these attacks to affect critical systems. MITRE ATT&CK has identified these groups as FIN6 [G0037],  FIN7 [G0046], and GOLD SOUTHFIELD [G0115].
-•	FIN6 – "This group has aggressively targeted and compromised point of sale (PoS) systems in the hospitality and retail sectors." (ATT&CK, FIN6, 2017)
-o	Also known for spreading Magecart
-•	FIN7 – "financially-motivated threat group that has been active since 2013 primarily targeting the U.S. retail, restaurant, and hospitality sectors, often using point-of-sale malware." (ATT&CK, FIN7 , 2017)
-•	Gold Southfield – "operates the REvil Ransomware-as-a Service (RaaS). GOLD SOUTHFIELD provides backend infrastructure" (ATT&CK, GOLD SOUTHFIELD, 2020)
-
+<ul>
+  <li>FIN6 – "This group has aggressively targeted and compromised point of sale (PoS) systems in the hospitality and retail sectors." (ATT&CK, FIN6, 2017)</li>
+  <ul>
+	<li>Also known for spreading Magecart</li>
+  </ul>
+  <li>FIN7 – "financially-motivated threat group that has been active since 2013 primarily targeting the U.S. retail, restaurant, and hospitality sectors, often using point-of-sale malware." (ATT&CK, FIN7 , 2017)</li>
+  <li>Gold Southfield – "operates the REvil Ransomware-as-a Service (RaaS). GOLD SOUTHFIELD provides backend infrastructure" (ATT&CK, GOLD SOUTHFIELD, 2020)</li>
+  </ul>
 <h4 id="header-four">Insider Threats</h4>
 One prevalent trend in OT compromises is Insider threats, and These attacks tend to be significant because of the attackers' knowledge of the network. At the same time, these attacks can be mitigated for former employees. Those still employed can pose a threat to security.
 <h3 id="header-three">OT Security and Risk Frameworks</h3>
 <h4 id="header-four">NIST SP 800-82 Rev. 2</h4>
 NIST, or National Institute of Standards and Technology, is a federal agency that promotes standards and practices for Technology and science. NIST has produced the NIST SP 800-82 Rev 2 as a guide for the Secure Deployment of ICS devices, Including SCADA, DCS, and PLCs that comprise an OT network. All NIST publications are free to view and use.
  800-82 outlines
-•	Risk management and assessments
-•	Security Program Development
-•	Architecture
-•	Security controls
-•	Supervisory control
+<ul>
+  <li>Risk management and assessments</li>
+  <li>Security Program Development</li>
+  <li>Architecture</li>
+  <li>Security controls</li>
+  <li>Supervisory control</li>
+</ul>
 <h4 id="header-four">IEC 62443</h4>
 IEC, the International Electrotechnical Commission, is the Standard for securing ICS controls. The group is an international standards organization that is based in Switzerland. It is similar to the NIST 800-82. IEC 62443 is written and controlled by an independent board, and the documentation for the Standard is a paid service offered by IEC.
 
@@ -206,35 +213,36 @@ I have found two sources: SANS top 5 ICS response Tabletops and CISA's Tabletop 
 <h3 id="header-three">Conclusion</h3>
 Attacks on Critical infrastructure have been growing at a steady rate. Without proper implementation of security systems for ICS, it will be challenging to stop these attacks before it has caused a significant effect on the industries they are supporting. ICS attacks have had profound effects on multiple industries, but one example that stands out the most is NotPetya. The ability of one nation to effectively stop another by attacking OT is a grim reminder of the effects these large-scale attacks can have. Implementing security controls around critical power and water infrastructure is necessary. Attacks in this area will only increase, and the only way to stay ahead is to increase the security and controls at the same rate.
 <h3 id="header-three">References</h3>
-Abrams, M., & Weiss, J. (2008). Malicious Control System Cyber Security Attack Case Study–Maroochy Water Services, Australia. MITRE Corporation.
-ATT&CK, M. (2017, May 31). FIN7 . Retrieved from MITRE ATT&CK: https://attack.mitre.org/groups/G0046/
-ATT&CK, M. (2017, May 31). Lazarus Group . Retrieved from MITRE ATT&CK: https://attack.mitre.org/groups/G0032/
-ATT&CK, M. (2017, May 31). ALLANITE. Retrieved from MITRE ATT&CK: https://attack.mitre.org/groups/G1000/
-ATT&CK, M. (2017, May 24). Dragonfly. Retrieved from MITRE ATT&CK: https://attack.mitre.org/groups/G0035/
-ATT&CK, M. (2017, May 31). FIN6. Retrieved from MITRE ATT&CK: https://attack.mitre.org/groups/G0037/
-ATT&CK, M. (2017, December 14). OilRig. Retrieved from MITRE ATT&CK: https://attack.mitre.org/groups/G0049/
-ATT&CK, M. (2017, May 31). Sandworm Team. Retrieved from MITRE ATT&CK: https://attack.mitre.org/groups/G0034/
-ATT&CK, M. (2018, October 18). HEXANE. Retrieved from MITRE ATT&CK: https://attack.mitre.org/groups/G1001/
-ATT&CK, M. (2019, January 2019). APT38 . Retrieved from MITRE ATT&CK: https://attack.mitre.org/groups/G0082/
-ATT&CK, M. (2019, April 16). TEMP.Veles. Retrieved from MITRE ATT&CK: https://attack.mitre.org/groups/G0088/
-ATT&CK, M. (2020, September 22). GOLD SOUTHFIELD. Retrieved from MITRE ATT&CK: https://attack.mitre.org/groups/G0115/
-ATT&CK, M. (2020, May 12). Wizard Spider. Retrieved from MITRE ATT&CK: https://attack.mitre.org/groups/G0102/
-Baezner, M., & Robin, P. (2017). Hotspot Analysis: Stuxnet. Center for Security Studies (CSS). Zürich: Center for Security Studies (CSS), ETH Zürich.
-Bailey, D., & Wright, E. (2003). Practical SCADA for Industry. n/a: Newnes.
-CISA. (2019, October). Abstract: ICS Cyber Incident Response Plan RP. Retrieved from CISA.gov: https://www.cisa.gov/uscert/ics/Abstract-ICS-Cyber-Incident-Response-Plan-RP
-Curtis, K. (2005). DNP3 Primer Rev A. DNP. Retrieved 7 2022, from https://www.dnp.org/Portals/0/AboutUs/DNP3%20Primer%20Rev%20A.pdf
-Greenberg, A. (2018, July 25). The Untold Story of NotPetya, the Most Devastating Cyberattack in History. Retrieved from Wired: https://www.wired.com/story/notpetya-cyberattack-ukraine-russia-code-crashed-the-world/
-Greenfield, D. (2020, May 12). Is the Purdue Model Still Relevant? Retrieved from Automation World: https://www.automationworld.com/factory/iiot/article/21132891/is-the-purdue-model-still-relevant
-Langner. (2021, April 23). What is OT/ICS configuration management, and how does it benefit engineers, admins, and auditors? Retrieved from OT-BASE by Langner: https://www.langner.com/2018/10/what-is-ot-ics-configuration-management/
-MITRE ATT&CK. (2018, April 18). APT33. Retrieved from MITRE ATT&CK: https://attack.mitre.org/groups/G0064/
-Mitsubishi Electric. (2009). FX1S FX1N FX2N(C) FX3U Beginner's Manual. Mitsubishi Electric.
-Nagorny, K., Colombo, A., & Schmidtmann, U. (2012, November). A service- and multi-agent-oriented manufacturing automation architecture: An IEC 62264 level 2 compliant implementation. Computers in Industry, 63(8), 813-823. doi:10.1016/j.compind.2012.08.003
-New York MTA. (2020). Subway and bus ridership for 2020. Retrieved from MTA: https://new.mta.info/agency/new-york-city-transit/subway-bus-ridership-2020
-NIST. (2015, May). Guide to Industrial Control Systems (ICS) Security - NIST. Retrieved from csrc.nist.gov: https://csrc.nist.gov/publications/detail/sp/800-82/rev-2/final
-Romanov, V. (2020). Blog. Retrieved 2021, from solisplc.com: https://www.solisplc.com/blog/plc-programming-languages
-SANS. (2022, June 20). SANS ICS. Retrieved from SANS Institute: https://www.sans.org/blog/top-5-ics-incident-response-tabletops-and-how-to-run-them/
-Tenable. (2022, March 3). Solution Overview: Industrial Cybersecurity for OT Environments. Retrieved from Tenable: https://www.tenable.com/solution-briefs/industrial-cybersecurity-for-ot-environments
-The Port Of Los Angeles. (2022). Container Statistics. Retrieved from portoflosangeles: https://www.portoflosangeles.org/business/statistics/container-statistics
-Virsec. (2019). Getting Ahead of the Triton ICS Attack. Retrieved from https://cdn2.hubspot.net/hubfs/1850012/Virsec_triton_ics.pdf
-
+<ul>
+  <li>Abrams, M., & Weiss, J. (2008). Malicious Control System Cyber Security Attack Case Study–Maroochy Water Services, Australia. MITRE Corporation.</li>
+  <li>ATT&CK, M. (2017, May 31). FIN7 . Retrieved from MITRE ATT&CK: https://attack.mitre.org/groups/G0046/</li>
+  <li>ATT&CK, M. (2017, May 31). Lazarus Group . Retrieved from MITRE ATT&CK: https://attack.mitre.org/groups/G0032/</li>
+  <li>ATT&CK, M. (2017, May 31). ALLANITE. Retrieved from MITRE ATT&CK: https://attack.mitre.org/groups/G1000/</li>
+  <li>ATT&CK, M. (2017, May 24). Dragonfly. Retrieved from MITRE ATT&CK: https://attack.mitre.org/groups/G0035/</li>
+  <li>ATT&CK, M. (2017, May 31). FIN6. Retrieved from MITRE ATT&CK: https://attack.mitre.org/groups/G0037/</li>
+  <li>ATT&CK, M. (2017, December 14). OilRig. Retrieved from MITRE ATT&CK: https://attack.mitre.org/groups/G0049/</li>
+  <li>ATT&CK, M. (2017, May 31). Sandworm Team. Retrieved from MITRE ATT&CK: https://attack.mitre.org/groups/G0034/</li>
+  <li>ATT&CK, M. (2018, October 18). HEXANE. Retrieved from MITRE ATT&CK: https://attack.mitre.org/groups/G1001/</li>
+  <li>ATT&CK, M. (2019, January 2019). APT38 . Retrieved from MITRE ATT&CK: https://attack.mitre.org/groups/G0082/</li>
+  <li>ATT&CK, M. (2019, April 16). TEMP.Veles. Retrieved from MITRE ATT&CK: https://attack.mitre.org/groups/G0088/</li>
+  <li>ATT&CK, M. (2020, September 22). GOLD SOUTHFIELD. Retrieved from MITRE ATT&CK: https://attack.mitre.org/groups/G0115/</li>
+  <li>ATT&CK, M. (2020, May 12). Wizard Spider. Retrieved from MITRE ATT&CK: https://attack.mitre.org/groups/G0102/</li>
+  <li>Baezner, M., & Robin, P. (2017). Hotspot Analysis: Stuxnet. Center for Security Studies (CSS). Zürich: Center for Security Studies (CSS), ETH Zürich.</li>
+  <li>Bailey, D., & Wright, E. (2003). Practical SCADA for Industry. n/a: Newnes.</li>
+  <li>CISA. (2019, October). Abstract: ICS Cyber Incident Response Plan RP. Retrieved from CISA.gov: https://www.cisa.gov/uscert/ics/Abstract-ICS-Cyber-Incident-Response-Plan-RP</li>
+  <li>Curtis, K. (2005). DNP3 Primer Rev A. DNP. Retrieved 7 2022, from https://www.dnp.org/Portals/0/AboutUs/DNP3%20Primer%20Rev%20A.pdf</li>
+  <li>Greenberg, A. (2018, July 25). The Untold Story of NotPetya, the Most Devastating Cyberattack in History. Retrieved from Wired: https://www.wired.com/story/notpetya-cyberattack-ukraine-russia-code-crashed-the-world/ </li>
+  <li>Greenfield, D. (2020, May 12). Is the Purdue Model Still Relevant? Retrieved from Automation World: https://www.automationworld.com/factory/iiot/article/21132891/is-the-purdue-model-still-relevant </li>
+  <li>Langner. (2021, April 23). What is OT/ICS configuration management, and how does it benefit engineers, admins, and auditors? Retrieved from OT-BASE by Langner: https://www.langner.com/2018/10/what-is-ot-ics-configuration-management/ </li>
+  <li>MITRE ATT&CK. (2018, April 18). APT33. Retrieved from MITRE ATT&CK: https://attack.mitre.org/groups/G0064/</li>
+  <li>Mitsubishi Electric. (2009). FX1S FX1N FX2N(C) FX3U Beginner's Manual. Mitsubishi Electric.</li> 
+  <li>Nagorny, K., Colombo, A., & Schmidtmann, U. (2012, November). A service- and multi-agent-oriented manufacturing automation architecture: An IEC 62264 level 2 compliant implementation. Computers in Industry, 63(8), 813-823. doi:10.1016/j.compind.2012.08.003</li>
+  <li>New York MTA. (2020). Subway and bus ridership for 2020. Retrieved from MTA: https://new.mta.info/agency/new-york-city-transit/subway-bus-ridership-2020</li>
+  <li>NIST. (2015, May). Guide to Industrial Control Systems (ICS) Security - NIST. Retrieved from csrc.nist.gov: https://csrc.nist.gov/publications/detail/sp/800-82/rev-2/final</li>
+  <li>Romanov, V. (2020). Blog. Retrieved 2021, from solisplc.com: https://www.solisplc.com/blog/plc-programming-languages</li>
+  <li>SANS. (2022, June 20). SANS ICS. Retrieved from SANS Institute: https://www.sans.org/blog/top-5-ics-incident-response-tabletops-and-how-to-run-them/</li>
+  <li>Tenable. (2022, March 3). Solution Overview: Industrial Cybersecurity for OT Environments. Retrieved from Tenable: https://www.tenable.com/solution-briefs/industrial-cybersecurity-for-ot-environments</li>
+  <li>The Port Of Los Angeles. (2022). Container Statistics. Retrieved from portoflosangeles: https://www.portoflosangeles.org/business/statistics/container-statistics </li>
+  <li>Virsec. (2019). Getting Ahead of the Triton ICS Attack. Retrieved from https://cdn2.hubspot.net/hubfs/1850012/Virsec_triton_ics.pdf</li>
+</ul>
 
