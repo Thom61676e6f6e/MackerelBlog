@@ -55,10 +55,10 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
-#author:
-#  name   : "Thom G"
-#  avatar : "/assets/images/bio-photo.jpg"
-#  bio    : "System Administrator and GCIH Holder"
+author:
+  name   : "Thom G"
+  avatar : "/assets/images/bio-photo.jpg"
+  bio    : "System Administrator and GCIH Holder"
 
 footer:
   links:
