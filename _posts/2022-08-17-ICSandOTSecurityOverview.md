@@ -49,12 +49,15 @@ Open Platform communications were developed to create a common language for Wind
 Process Field Net is a communication standard used for communicating over industrial ethernet, which is not to be confused with standard ethernet. These protocols tend to transmit on layer two as opposed to layer three. These connections offer lower latency than traditional ethernet.
 <h3 id="header-three">OT Programming</h3>
 
+
 <h4 id="header-four">Ladder diagram</h4>
-Ladder Logic is one of the first uses of programing PLCs; In contrast, Ladder logic is a programing language for PLCs. It was initially developed to show the relation of relays in a rack as the process worked through the function. It has now been adopted for PLC instruction sets.
 <figure style="width: 300px" class="align-right">
   <img src="https://thom61676e6f6e.github.io/MackerelBlog/assets/images/ICSOTimages/ladderdiagram.gif" alt="" />
   <figcaption>(Romanov, 2020) </figcaption>
 </figure>
+Ladder Logic is one of the first uses of programing PLCs; In contrast, Ladder logic is a programing language for PLCs. It was initially developed to show the relation of relays in a rack as the process worked through the function. It has now been adopted for PLC instruction sets.
+
+
 <h4 id="header-four">Function block diagram</h4>
 FBD is a graphical-based form of PLC programming generally used for chemical processes. Function blocks tend to work in a loop where one input will go back to the output and loop till the exit condition is met. The function block is useful for smaller applications but can be troublesome when scaled
 <figure style="width: 300px" class="align-right">
@@ -74,11 +77,12 @@ Instruction List is a text-based form of programming that relies on sending an o
   <figcaption>(Mitsubishi Electric, 2009)</figcaption>
 </figure>
 <h4 id="header-four">Sequential function chart</h4>
-Sequential functions are similar to the instruction list but will verify the state of the device and environment; once the state has been confirmed, the sequential function will move to the following condition and will continue until the process has been completed. Structured text can be included within SF for more complex operations.
 <figure style="width: 300px" class="align-right">
   <img src="https://thom61676e6f6e.github.io/MackerelBlog/assets/images/ICSOTimages/sequential.jpg" alt="" />
   <figcaption>(Romanov, 2020) </figcaption>
 </figure>
+Sequential functions are similar to the instruction list but will verify the state of the device and environment; once the state has been confirmed, the sequential function will move to the following condition and will continue until the process has been completed. Structured text can be included within SF for more complex operations.
+
 <h3 id="header-three">Why are ICS and OT Security Important?</h3>
 The disruption of OT devices can have various effects on an organization in the manufacturing industry and potentially have to stop production entirely. At the same time, systems are restored, which can be a massive loss of profits. Other issues that can arise are the tampering of OT devices that substitute values so that the machines being controlled are not mixing materials correctly or possibly forcing the machines to operate in a manner that can cause damage to the machinery.
 	The effects on the Energy industry can have potentially damaging effects on the countries or areas that are affected. OT controls in the energy sector allow plants to operate safely and provide the consistency needed to produce and transmit energy. If these controls are compromised, it can have an overall effect. Very few things in the modern age function without electricity; this can affect almost all aspects of life and potentially shut down entire cities if they are compromised.
