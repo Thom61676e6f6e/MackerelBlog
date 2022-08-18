@@ -22,13 +22,13 @@ A Short overview of typical OT and ICS devices found in modern networks
 <h4 id="header-four">SCADA</h4>
 A Supervisory Control and Data Acquisition system is a system that controls a wide range of Remote Terminal Units known as RTUs. The primary responsibility of the SCADA system is the ability to interact with RTUs and PLCs. All SCADA systems have the same components regardless of their intended use: Input Devices (Keyboard, Mouse, etc.) Graphical Display, Networking, Alarms and Alerts, Monitoring, and an Interface for connecting to Programmable Logic Controllers (PLCs) and Remote Terminal Units (RTU). These systems are generally built to be redundant and Scalable and use specialized software to manage their operations. 
 <figure style="width: 300px" class="align-center">
-  <img src="https://thom61676e6f6e.github.io/MackerelBlog/assets/images/ICSOTimages/scada.jpg" alt="" />
+  <img src="/assets/images/ICSOTimages/scada.jpg" alt="" />
   <figcaption> (Bailey & Wright, 2003) </figcaption>
 </figure>
 <h4 id="header-four">DCS</h4>
 A Distributed Control System is a device that allows operator workstations to interact with OT devices to send commands and monitor the devices in the network. DCS can also trigger devices to automate processes in the OT Network such as starting or stopping actions depending on the states it receives and taking corrective actions if the given state is not within its operational guidelines. For the Operator end, these devices also can poll the connected devices for data that an operator can review.
 <figure style="width: 300px" class="align-center">
-  <img src="https://thom61676e6f6e.github.io/MackerelBlog/assets/images/ICSOTimages/dcs.jpg" alt="" />
+  <img src="/assets/images/ICSOTimages/dcs.jpg" alt="" />
   <figcaption> (Bailey & Wright, 2003) </figcaption>
 </figure>
 <h4 id="header-four">PLCs</h4>
@@ -51,35 +51,35 @@ Process Field Net is a communication standard used for communicating over indust
 
 <h4 id="header-four">Ladder diagram</h4>
 <figure style="width: 300px" class="align-right">
-  <img src="https://thom61676e6f6e.github.io/MackerelBlog/assets/images/ICSOTimages/ladderdiagram.gif" alt="" />
+  <img src="/assets/images/ICSOTimages/ladderdiagram.gif" alt="" />
   <figcaption>(Romanov, 2020) </figcaption>
 </figure>
 Ladder Logic is one of the first uses of programing PLCs; In contrast, Ladder logic is a programing language for PLCs. It was initially developed to show the relation of relays in a rack as the process worked through the function. It has now been adopted for PLC instruction sets.
 
 <h4 id="header-four">Function block diagram</h4>
 <figure style="width: 300px" class="align-right">
-  <img src="https://thom61676e6f6e.github.io/MackerelBlog/assets/images/ICSOTimages/functionblock.png" alt="" />
+  <img src="/assets/images/ICSOTimages/functionblock.png" alt="" />
   <figcaption>(Romanov, 2020) </figcaption>
 </figure>
 FBD is a graphical-based form of PLC programming generally used for chemical processes. Function blocks tend to work in a loop where one input will go back to the output and loop till the exit condition is met. The function block is useful for smaller applications but can be troublesome when scaled
 
 <h4 id="header-four">Structured text</h4>
 <figure style="width: 300px" class="align-right">
-  <img src="https://thom61676e6f6e.github.io/MackerelBlog/assets/images/ICSOTimages/structredtext.jpg" alt="" />
+  <img src="/assets/images/ICSOTimages/structredtext.jpg" alt="" />
   <figcaption>(Romanov, 2020) </figcaption>
 </figure>
 Structured text programming is the closest to modern programming languages. While this makes it easier to develop the same rules apply to ST as any other programing language where error handling must be written into the program or the PLC will run into an error condition. Looking at the output below, you can see the resemblance to C.
 
 <h4 id="header-four">Instruction list</h4>
 <figure style="width: 300px" class="align-right">
-  <img src="https://thom61676e6f6e.github.io/MackerelBlog/assets/images/ICSOTimages/instructionlist.jpg" alt="" />
+  <img src="/assets/images/ICSOTimages/instructionlist.jpg" alt="" />
   <figcaption>(Mitsubishi Electric, 2009)</figcaption>
 </figure>
 Instruction List is a text-based form of programming that relies on sending an ordered list to a PLC that it can step through. Instruction lists are very similar to the assembly language. Generally a command is loaded with an LD value and this is set to an accumulator to be processed.
 
 <h4 id="header-four">Sequential function chart</h4>
 <figure style="width: 300px" class="align-right">
-  <img src="https://thom61676e6f6e.github.io/MackerelBlog/assets/images/ICSOTimages/sequential.jpg" alt="" />
+  <img src="/assets/images/ICSOTimages/sequential.jpg" alt="" />
   <figcaption>(Romanov, 2020) </figcaption>
 </figure>
 Sequential functions are similar to the instruction list but will verify the state of the device and environment; once the state has been confirmed, the sequential function will move to the following condition and will continue until the process has been completed. Structured text can be included within SF for more complex operations.
@@ -175,7 +175,7 @@ Level 1 is responsible for containing the PLCs and RTUs
 Is the physical process Devices such as Pumps, Mills, IIoT Devices etc.
 <h5 id="header-five">Graphical representation Of Purdue Model</h5>
 <figure style="width: 1200px" class="align-center">
-  <img src="https://thom61676e6f6e.github.io/MackerelBlog/assets/images/ICSOTimages/purduegraphic.png" alt="" />
+  <img src="/assets/images/ICSOTimages/purduegraphic.png" alt="" />
   <figcaption>(Greenfield, 2020)</figcaption>
 </figure>
 <h3 id="header-three">OT Security & Monitoring</h3>
