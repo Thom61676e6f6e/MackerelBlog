@@ -1,6 +1,7 @@
 ---
 permalink: /about/
 title: "About"
+author_profile: true
 ---
 
 Welcome to my Blog. I Started this blog as a way to highlight all of the various projects I do in my spare time.
