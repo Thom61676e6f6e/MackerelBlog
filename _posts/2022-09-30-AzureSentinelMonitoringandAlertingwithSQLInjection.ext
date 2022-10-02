@@ -10,13 +10,35 @@ tags:
   - SIEM
 toc: true
 toc_label: "Azure Sentinel Monitoring and Alerting with SQL Injection"
-toc_icon: "cogs"
+toc_icon: "cloud"
 ---
-<h2 id="header-two">Abstract</h2>
-<h3 id="header-two">Abstract</h3>
-<h4 id="header-two">Abstract</h4>
-<h5 id="header-two">Abstract</h5>
-<h6 id="header-two">Abstract</h6>
-<h7 id="header-two">Abstract</h7>
-<h8 id="header-two">Abstract</h8>
-<h9 id="header-two">Abstract</h9>
+
+<h1 id="Overview" </h1>
+<body>
+<h1 id="WAF Policy">WAF Policy</h1>
+<p> To create an application gateway within the WAF V2 tier, a WAF policy needs to be created. This is available from the Web Application Firewall Policies. This is referred to as a front door WAF policy. The configuration is straightforward for this policy; however, the Policy Mode needs to be set to detection to allow reporting to Sentinel while allowing exploitation of the database. This level of visibility is needed to produce a detailed incident report. </p>
+
+<h1 id="Application Gateway Configuration">Application Gateway Configuration</h1>
+<p> </p>
+<h1 id="Log Analytics Configuration">Log Analytics Configuration</h1>
+<p> </p>
+<h1 id="Sentinel Configuration">Sentinel Configuration</h1>
+<p> </p>
+<h1 id="Data Connectors">Data Connectors</h1>
+<p> </p>
+<h1 id="Sentinel Workbook templates">Sentinel Workbook templates</h1>
+<p> </p>
+<h1 id="DVWA Installation">DVWA Installation</h1>
+<p> </p>
+<h1 id="SQL Injection">SQL Injection</h1>
+<p> </p>
+<h1 id="Sentinel Workbook">Sentinel Workbook</h1>
+<p> </p>
+
+<h1 id="Sentinel Incident">Sentinel Incident</h1>
+<p> </p>
+<h1 id="WAF Prevention">WAF Prevention</h1>
+<p> </p>
+<h1 id="header-two">Abstract</h1>
+<p> </p>
+</body>
