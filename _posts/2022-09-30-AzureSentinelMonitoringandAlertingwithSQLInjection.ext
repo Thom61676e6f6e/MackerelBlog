@@ -13,8 +13,8 @@ toc_label: "Azure Sentinel Monitoring and Alerting with SQL Injection"
 toc_icon: "cloud"
 ---
 
-<h1 id="Overview" </h1>
-<p> </p>
+<h1 id="Overview"> Overview </h1>
+<p> This projects aims to demostrate the ability of Azure sentinel to monitor Web Apllication Firewalls and generate incidents based on information gathered</p>
 <body>
 <h1 id="WAF Policy">WAF Policy</h1>
 <p> To create an application gateway within the WAF V2 tier, a WAF policy needs to be created. This is available from the Web Application Firewall Policies. This is referred to as a front door WAF policy. The configuration is straightforward for this policy; however, the Policy Mode needs to be set to detection to allow reporting to Sentinel while allowing exploitation of the database. This level of visibility is needed to produce a detailed incident report. </p>
@@ -42,11 +42,10 @@ Going to the Sentinel page, we will create a Microsoft Sentinel Instance.</p>
 <p>In its current state, the sentinel platform is empty. We need to add data connectors to the environment to populate the SIEM. </p>
 <h1 id="Data Connectors">Data Connectors</h1>
 <p>Azure has a wide variety of data connectors built into the platform that covers everything in the Azure environment. They also offer a content hub for services and devices such as darktrace or Palo Alto firewalls. For this project, I will need two separate data connectors, One for the WAF and one for the server. Data connectors can be found under the configuration tab on the left. </p>
-<h2> id="WAF"WAF</h2> 
+<h2> id="WAF">WAF</h2> 
 <p> Microsoft offers a prebuilt data connector for their WAF solution, which is called "Azure Web Application Firewall" We can connect this data connector by going to the Open Connector Page</p>
 <p>Each data connector has a different configuration method, but the page will have a walkthrough for these steps. </p>
 <p>The Application Gateway and WAF policy must have these values configured for this project. </p>
-<p> </p>
 
 <p>From here, I will go to the DVWAAppGate and diagnostic settings </p>
 <p>Then add the diagnostic setting</p>
@@ -70,7 +69,7 @@ Going to the Sentinel page, we will create a Microsoft Sentinel Instance.</p>
 <p>I am not creating an automated response for this because I want to review this incident manually. And I will be aware of it because I am the one executing it. We can move on to the review</p>
 <p>Now that the WAF is sending Logs to Sentinel, we can see this data populate and move on to the next connector.</p>
 
-<h1 id="Virtual Machine" Virtual Machine </h1>
+<h1 id="Virtual Machine" > Virtual Machine </h1>
 <p>To send logs to Sentinel from a Linux-based server, we will need to use the Syslog data connector</p>
 <p>Azure makes these easy because the connector can be deployed as an agent on the existing server, reducing the time spent on the configuration. From here, we can click the "Install agent on azure Linux virtual machine" and then download and install</p>
 <p>We select our VM from this menu</p>
@@ -86,7 +85,7 @@ Going to the Sentinel page, we will create a Microsoft Sentinel Instance.</p>
 <p>And from here, we can open the Syslog playbook and see some data being populated</p>
 <p>And looking at the WAF workbook, we'll see some requests by IP to the webserver.</p>
 <h1 id="DVWA Installation">DVWA Installation</h1>
-<p> </p>
+
 <p>*Disclaimer* DO NOT INSTALL DVWA ON PUBLIC FACING SERVICES. This web app is riddled with vulnerabilities and can lead to any service being compromised. Any reference to the internet within this project is my IP or IPs I have allowed to the service.</p>
 
 <p>DVWA is a web application built for web application penetration testing. It is easy to configure and available on GitHub. I choose this web application because of its ease of deployment, ease of use, and exploitability. To install DVWA, the server needs a LAMP stack that was installed previously. Using the bastion in the network, I connect to the VM, and I can begin the installation</p>
