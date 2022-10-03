@@ -265,7 +265,7 @@ systemctl status apache2</code></p>
 
 <p>Now that we can see the WAF is in prevention mode and we will rerun the attack</p>
 <p><code>sqlmap -u “http://20.163.243.165/vulnerabilities/sqli/” --proxy=http://127.0.0.1:8080<br>
---cookie="PHPSESSID=8c2npca2tvo936ht8j7f9knu3a;security=medium"<br>
+--cookie="PHPSESSID=ueufmufdimuqm9l72lf6on1lkg;security=medium"<br>
 --data="id=1&Submit=Submit”"<br>
 -wizard </code></p>
 
